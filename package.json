@@ -1,6 +1,6 @@
 {
   "name": "webrtcvad",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Bindings for the WebRTC VAD.",
   "license": "MIT",
   "main": "./lib/cjs/index.js",
@@ -44,8 +44,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "preversion": "npm test",
-    "version": "npm run build && git add -A lib",
+    "preversion": "npm run build && npm test",
+    "version": "git add -f lib && git commit -m 'chore: update build output for release'",
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
