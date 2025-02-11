@@ -1,7 +1,8 @@
 import bindings from "bindings";
-const vadBindings = bindings("vad.node");
 
-export default class VAD {
+const vadBindings = bindings("webrtcvad");
+
+class VAD {
   private sampleRate: number;
   private instance: any;
 
@@ -21,12 +22,25 @@ export default class VAD {
   process(audio: Buffer): boolean {
     if (!this.valid(audio)) {
       throw new Error(
-        `Invalid audio length. For a sample rate of ${this.sampleRate}, audio length must be ${(2 *
-          this.sampleRate) /
-          100}, ${(4 * this.sampleRate) / 100}, or ${(6 * this.sampleRate) / 100}.`
+        `Invalid audio length. For a sample rate of ${
+          this.sampleRate
+        }, audio length must be ${(2 * this.sampleRate) / 100}, ${
+          (4 * this.sampleRate) / 100
+        }, or ${(6 * this.sampleRate) / 100}.`
       );
     }
-
     return this.instance.process(audio, audio.length / 2);
   }
 }
+
+// ✅ Properly support both ESM and CommonJS
+const vad = { VAD };
+
+// CommonJS compatibility
+if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
+  module.exports = vad;
+}
+
+// Default export for ESM
+export default vad;
+export { VAD };

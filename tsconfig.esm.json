@@ -7,7 +7,7 @@
     "removeComments": true,
     "esModuleInterop": true,
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "dist/esm",
     "declaration": true
   }
 }
