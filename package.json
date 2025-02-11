@@ -45,7 +45,6 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "preversion": "npm run build && npm test",
-    "version": "git add -f package.json package-lock.json && git commit -m \"chore: update build output for release\"",
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
