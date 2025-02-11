@@ -1,7 +1,8 @@
 {
   "targets": [
     {
-      "target_name": "vad",
+      "target_name": "webrtcvad",
+      "product_name": "webrtcvad",
       "cflags!": ["-fexceptions"],
       "cflags_cc!": ["-fexceptions", "-std=c++11", "-stdlib=libc++"],
       "sources": [
