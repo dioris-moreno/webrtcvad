@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "target": "ES2020",
+    "module": "NodeNext", // ✅ Required for `import.meta`
+    "moduleResolution": "NodeNext", // ✅ Required for `NodeNext`
     "noImplicitAny": true,
     "removeComments": true,
     "strict": true,
     "esModuleInterop": true,
     "sourceMap": true,
-    "declaration": true,
-    "moduleResolution": "Node"
+    "declaration": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "tests", "lib"]

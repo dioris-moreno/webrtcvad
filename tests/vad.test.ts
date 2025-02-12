@@ -1,4 +1,4 @@
-import { VAD } from "../src/index";
+import { VAD } from "../lib/cjs/index";
 
 describe("WebRtcVad Library", () => {
   let vad: VAD;

@@ -1,9 +1,12 @@
 import bindings from "bindings";
-import appRoot from "app-root-path";
+import path from "path";
+
+// ESTO TRABAJA EN DESARROLLO
+const rootDir = path.resolve(__dirname, "../../");
 
 const vadBindings = bindings({
   bindings: "webrtcvad",
-  module_root: appRoot.path,
+  module_root: rootDir,
 });
 
 class VAD {
