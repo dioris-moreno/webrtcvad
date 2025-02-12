@@ -1,5 +1,5 @@
 {
-  "name": "webrtcvad",
+  "name": "@libersys/webrtcvad",
   "version": "1.1.5",
   "description": "Bindings for the WebRTC VAD.",
   "license": "MIT",
@@ -32,9 +32,9 @@
     "pcm"
   ],
   "bugs": {
-    "url": "https://github.com/dioris-moreno/webrtcvad/issues"
+    "url": "https://github.com/libersys/webrtcvad/issues"
   },
-  "repository": "git+https://github.com/dioris-moreno/webrtcvad.git",
+  "repository": "git+https://github.com/libersys/webrtcvad.git",
   "dependencies": {
     "bindings": "^1.5.0",
     "node-addon-api": "^1.7.2"
