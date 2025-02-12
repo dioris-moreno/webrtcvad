@@ -20,12 +20,6 @@
       ]
     }
   },
-  "files": [
-    "src",
-    "binding.gyp",
-    "package.json",
-    "README.md"
-  ],
   "keywords": [
     "webrtc",
     "vad",
