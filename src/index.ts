@@ -1,6 +1,6 @@
 import bindings from "bindings";
 
-const vadBindings = bindings("webrtcvad");
+const vadBindings = bindings({ bindings: "webrtcvad", module_root: __dirname });
 
 class VAD {
   private sampleRate: number;
