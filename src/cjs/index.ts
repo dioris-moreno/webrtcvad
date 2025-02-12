@@ -1,7 +1,8 @@
+// index.cjs.ts (For CommonJS Build)
 import bindings from "bindings";
 import path from "path";
 
-// ESTO TRABAJA EN DESARROLLO
+// ✅ Use __dirname in CommonJS
 const rootDir = path.resolve(__dirname, "../../");
 
 const vadBindings = bindings({

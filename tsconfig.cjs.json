@@ -4,5 +4,6 @@
     "outDir": "lib/cjs",
     "module": "CommonJS",
     "moduleResolution": "Node"
-  }
+  },
+  "include": ["src/cjs/index.ts"]
 }

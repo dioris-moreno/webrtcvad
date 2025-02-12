@@ -4,5 +4,6 @@
     "outDir": "lib/esm",
     "module": "NodeNext",
     "moduleResolution": "NodeNext"
-  }
+  },
+  "include": ["src/esm/index.ts"]
 }
