@@ -1,6 +1,10 @@
 import bindings from "bindings";
+import appRoot from "app-root-path";
 
-const vadBindings = bindings({ bindings: "webrtcvad", module_root: __dirname });
+const vadBindings = bindings({
+  bindings: "webrtcvad",
+  module_root: appRoot.path,
+});
 
 class VAD {
   private sampleRate: number;
