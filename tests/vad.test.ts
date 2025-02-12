@@ -1,4 +1,4 @@
-import { VAD } from "../lib/cjs/index"; // Import the CommonJS version for Jest
+import { VAD } from "../src/index";
 
 describe("WebRtcVad Library", () => {
   let vad: VAD;
